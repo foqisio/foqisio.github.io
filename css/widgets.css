@@ -466,7 +466,7 @@ svg.utouch-icon {
         font-size: 12px;
         margin: 0;
         margin-right: -5px;
-        padding: 8px 10px 6px;
+        padding: 7px 10px 4px;
         width: 155px;
     }
     .signup-block a {
@@ -496,8 +496,33 @@ svg.utouch-icon {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
+#top_header {
+    font-weight: 300;
+    padding-top: 30px;
+}
 
+.masthead {
+    padding-top: 20px;
+}
 
+.masthead ul {
+    margin-left: 10px;
+}
+
+.masthead ul li {
+    padding: 0 0 15px 20px;
+    position: relative;
+}
+
+.masthead ul li img {
+    left: -32px;
+    position: absolute;
+}
+
+.masthead .main-slider-btn-wrap {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 
 /*================= Responsive Mode ============*/
 @media (max-width: 460px) {
