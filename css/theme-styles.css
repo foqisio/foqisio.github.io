@@ -4502,8 +4502,8 @@ textarea {
 
 .header--menu-rounded .primary-menu-menu > li > a {
   padding: 10px 13px;
-  border-radius: 30px;
-  background-color: transparent; }
+  border-bottom: 2px solid transparent;
+}
 
 .header--menu-rounded .primary-menu-menu > li {
   padding: 20px 15px; }
@@ -4511,9 +4511,9 @@ textarea {
 .header--menu-rounded .primary-menu-menu > li::before {
   display: none; }
 
-.header--menu-rounded .primary-menu-menu > li > a:hover,
+/*.header--menu-rounded .primary-menu-menu > li > a:hover,
 .header--menu-rounded .primary-menu-menu > li.current-menu-item > a {
-  background-color: #ecf4fc; }
+  background-color: #ecf4fc; }*/
 
 .header--menu-rounded.header--dark .primary-menu-menu > li > a:hover,
 .header--menu-rounded.header--dark .primary-menu-menu > li.current-menu-item > a {
@@ -4521,7 +4521,9 @@ textarea {
 
 .header--menu-rounded.header--blue-lighteen .primary-menu-menu > li > a:hover,
 .header--menu-rounded.header--blue-lighteen .primary-menu-menu > li.current-menu-item > a {
-  background-color: #fff; }
+    border-bottom: 2px solid #0082d7;
+    border-radius: 0;
+}
 
 .header--menu-rounded .primary-menu-menu > li > .megamenu,
 .header--menu-rounded .primary-menu-menu ul.sub-menu {
@@ -5114,18 +5116,30 @@ License: http://codecanyon.net/licenses
 .primary-menu-menu > li > a {
   position: relative;
   font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   transition: all .3s ease;
   color: #6a85a6;
   display: inline-block;
   line-height: 1; }
 
-.primary-menu-menu > li:hover > a,
+.primary-menu-menu > li > a.btn {
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: none;
+}
+
+.primary-menu-menu > li > a.btn:hover {
+    background-color: #006EC3;
+    border-radius: 5px !important;
+    border-color: transparent !important;
+}
+
+/*.primary-menu-menu > li:hover > a,
 .primary-menu-menu > li:hover,
 .primary-menu-menu > li.current-menu-item a,
 .primary-menu-menu > li.current-menu-item {
-  color: #0083ff; }
+  color: #0083ff; }*/
 
 .primary-menu-menu > li:before {
   content: '';

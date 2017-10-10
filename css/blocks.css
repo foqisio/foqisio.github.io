@@ -1369,6 +1369,7 @@ div:hover > .btn-reverse-bg-green {
     margin-bottom: 15px; }
   .info-box--standard-hover .info-box-text {
     margin-bottom: 40px;
+    text-align: left;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto; }
