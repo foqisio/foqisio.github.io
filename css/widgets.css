@@ -534,6 +534,19 @@ svg.utouch-icon {
     line-height: 4;
 }
 
+a.learnmore {
+    color: #0082d7;
+    font-size: 12px;
+}
+
+a.learnmore:hover {
+    text-decoration: underline;
+}
+
+.understand-header {
+    font-size: 34px;
+}
+
 /*================= Responsive Mode ============*/
 @media (max-width: 460px) {
   .w-author .testimonial-img-author .socials {

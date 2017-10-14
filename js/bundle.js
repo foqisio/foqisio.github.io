@@ -2,9 +2,14 @@ $(function() {
     //smooth scrolling
     $('a[href*="#"]').on('click', function(e) {
         try {
-            e.preventDefault();
             var target = $(this).attr('href');
-            document.querySelector(target).scrollIntoView({behavior: 'smooth'});
+            var c0 = target.charAt(0);
+
+            // on honor local anchors (they must start with a #)
+            if (c0 === '#') {
+                e.preventDefault();
+                document.querySelector(target).scrollIntoView({behavior: 'smooth'});
+            }
         } catch(e){}
 
         $('.back-to-top').on('click', function () {
